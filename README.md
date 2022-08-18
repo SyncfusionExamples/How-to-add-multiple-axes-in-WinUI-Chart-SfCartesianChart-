@@ -1,6 +1,6 @@
 # How-to-add-multiple-axes-in-WinUI-Chart-SfCartesianChart
 
-The WinUI Cartesian chart provides support to add multiple axes inside the same chart area with specified x-axis and y-axis. There are two properties XAxisName and YAxisName in all the Cartesian series type, which is used to provide multiple axes support.
+The WinUI [Cartesian chart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides support to add multiple axes inside the same chart area with specified x-axis and y-axis. There are two properties [XAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxisName) in all the [CartesianSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html) type, which is used to provide multiple axes support.
 
 The user guide Documentation helps you to acquire more knowledge on charts and their features. You can also refer to the Feature Tour site to get an overview of all the features in the chart.
 
@@ -10,7 +10,7 @@ The user guide Documentation helps you to acquire more knowledge on charts and t
 Create a simple project using the instructions given in the Getting Started with your first WinUI app documentation.
 
 ### Step 2: 
-Add Syncfusion.Chart.WinUI NuGet to the project and import the SfCartesianChart namespace as follows.
+Add Syncfusion.Chart.WinUI NuGet to the project and import the [SfCartesianChart]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html)) namespace as follows.
 
 **[XAML]**
 ```
@@ -21,7 +21,7 @@ xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
 using Syncfusion.UI.Xaml.Charts;
 ```
 ### Step 3: 
-Initialize an empty chart with XAxes and YAxes as shown in the following code sample.
+Initialize an empty chart with [XAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_XAxes) and [YAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_YAxes) as shown in the following code sample.
 
 **[XAML]**
 ```
@@ -75,7 +75,7 @@ chart.DataContext = new ViewModel();
 ```
 ### Step 5: Populate chart with multiple axes.
 
-As we are going to visualize the multiple axes in cartesian chart, add multiple axes to the SfCartesianChart.XAxes or SfCartesianChart.YAxes property.  Then, Assign these axis names to the XAxisName or YAxisName property of the cartesian series.
+As we are going to visualize the multiple axes in cartesian chart, add multiple axes to the [SfCartesianChart.XAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_XAxes) or [SfCartesianChart.YAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_YAxes) property.  Then, Assign these axis names to the [XAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxisName) or [YAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxisName) property of the cartesian series.
 
 **[XAML]**
 ```
