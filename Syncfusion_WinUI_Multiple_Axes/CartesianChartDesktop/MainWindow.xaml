@@ -1,0 +1,53 @@
+﻿<Window
+    x:Class="CartesianChartDesktop.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:viewModel="using:CartesianChartDesktop"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <chart:SfCartesianChart x:Name="chart" Header="Chart Multiple Axes">
+            <chart:SfCartesianChart.DataContext>
+                <viewModel:ViewModel />
+            </chart:SfCartesianChart.DataContext>
+            
+            <chart:SfCartesianChart.XAxes>
+                <chart:DateTimeAxis ShowGridLines="False" LabelFormat="HH" Interval="1" IntervalType="Hours" Header="Time"/>
+            </chart:SfCartesianChart.XAxes>
+
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis x:Name="yAxis1" Minimum="0" Maximum="6000" Interval="1000" 
+                                     LabelFormat="0rpm" Foreground="Blue" Header="VFD Speed"/>
+                <chart:NumericalAxis x:Name="yAxis2" OpposedPosition="True"  Minimum="55" Maximum="85" Interval="5"
+                                     LabelFormat="0psi" Foreground="Green" Header="Discharge Pressure"/>
+            </chart:SfCartesianChart.YAxes>
+
+            <chart:SfCartesianChart.Legend>
+                <chart:ChartLegend />
+            </chart:SfCartesianChart.Legend>
+
+            <chart:SfCartesianChart.Series>
+                <chart:LineSeries ItemsSource="{Binding Data}"
+                                  XBindingPath="Time"
+                                  YBindingPath="Speed"
+                                  Label="Speed"
+                                  Fill="Blue"
+                                  YAxisName="yAxis1"
+                                  ShowTooltip="True"/>
+
+                <chart:SplineSeries ItemsSource="{Binding Data}"
+                                    XBindingPath="Time" 
+                                    YBindingPath="Pressure" 
+                                    Label="Pressure"
+                                    Fill="Green"
+                                    YAxisName="yAxis2"
+                                    ShowTooltip="True"/>
+            </chart:SfCartesianChart.Series>
+
+        </chart:SfCartesianChart>
+
+    </Grid>
+</Window>
