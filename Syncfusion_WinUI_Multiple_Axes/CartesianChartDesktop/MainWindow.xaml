@@ -35,7 +35,6 @@
                                   YBindingPath="Speed"
                                   Label="Speed"
                                   Fill="Blue"
-                                  YAxisName="yAxis1"
                                   ShowTooltip="True"/>
 
                 <chart:SplineSeries ItemsSource="{Binding Data}"
