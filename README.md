@@ -1,4 +1,4 @@
-# How-to-add-multiple-axes-in-WinUI-Chart-SfCartesianChart
+# How to add multiple axes in WinUI Chart (SfCartesianChart)?
 
 The WinUI [Cartesian chart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides support to add multiple axes inside the same chart area with the specified x-axis and y-axis. There are two properties [XAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxisName) in all the [CartesianSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html) types, which are used to provide multiple axes support.
 
